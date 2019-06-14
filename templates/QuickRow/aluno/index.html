@@ -1,0 +1,229 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt">
+
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Quick Row</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href={% static "QuickRow/aluno/vendor/bootstrap/css/bootstrap.min.css"%} rel="stylesheet">
+
+
+  <!-- Custom styles for this template -->
+  <link href={% static "QuickRow/aluno/css/scrolling-nav.css"%} rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Quick Row</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">Quem Somos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Senha</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">FAQ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="bg-info text-white">
+    <div class="container text-center">
+      <img src={% static "QuickRow/aluno/logo-01.png"%} width="350">
+      <h1>Bem vindo ao Quick row</h1>
+      <p class="lead">Nosso app quer resolver seus problemas com filas. Retire sua senha para o CAA</p>
+    </div>
+  </section>
+
+
+<!-- Apresentação do APP -->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>Conhece o Quick Row?</h2>
+          <p class="lead">Este é um trabalho acadêmico voltado para resolução dos problemas presentes nas filas de CAA - Centro de Atendimento ao Aluno</p>
+          <ul>
+            <li>Organização das filas</li>
+            <li>Melhor utilização dos atendentes</li>
+            <li>Facil utilização</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!--Parte da Senha -->
+  <section id="services" class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>SENHA</h2>
+          <p class="lead">Retire abaixo a senha para seu atendimento</p>
+          <form class="form-signin">
+
+          <label for="inputNumber" class="sr-only">RA</label>
+          <input type="text" id="inputNumber" class="form-control" placeholder="RA" maxlength="11" required autofocus>
+          <label for="inputPassword" class="sr-only">Senha</label>
+          <input type="password" id="inputPassword" class="form-control"  min="1" placeholder="Senha" required>
+
+          <div class="checkbox mb-3">
+            <label class="mt-3">
+              <input type="checkbox" value="remember-me"> Lembrar de Mim
+            </label>
+
+          </div>
+          <a class="btn btn-secondary btn-lg btn-block bg-info" href="gerasenha" role="button">Acessar</a>
+          <p class="mt-5 mb-3 text-muted">&copy; Quick Row-2019</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+<!-- Parte do FAQ-->
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2>FAQ</h2>
+          <p class="lead">   <div class="accordion" id="accordionExample">
+              <div class="card">
+
+                <div class="card-header" id="headingOne">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Matrícula
+                    </button>
+                  </h2>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                  <div class="card-body bg-info text-white">
+                    A Rematrícula é feita via Ulife
+                  </div>
+                </div>
+              </div>
+
+               <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Financeiro
+                    </button>
+                  </h2>
+
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body bg-info text-white">
+
+                    Para verificar seu extrato financeiro/Mensalidade acesse o Ulife Home>Financeiro>Extrato Financeiro<br>
+                    Ou se preferir pode fazer o pagamento online pelo caminho Ulife>Home>Financeiro>Pagamento Online.<br>
+                    As demais situações poderão ser resolvidas no CAA.
+
+                  </div>
+                </div>
+              </div>
+
+               <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Bolsas
+                    </button>
+                  </h2>
+                </div>
+                <div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body bg-info text-white">
+                    Possui algum tipo de bolsa, desconto, ou incentivo oferecido por sindicatos, empresas e outros?</br>
+                    Abra solicitação online via SOL ALUNO(ULIFE)>MENU>SERVIÇOS>SOLICITAÇÕES ONLINE</br>
+                    FIES - Amortização, PRAVALER, PROUNI - todos tem de ser verificados a requisição online via</br>
+                    MENU > SERVIÇOS > SOLICITAÇÕES ONLINE, verifique online primeiramente, se seu problema pode ser solucionado.
+                    Caso contrário, procure o CAA.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+               <div class="card-header" id="headingFour">
+                 <h2 class="mb-0">
+                   <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                     Acadêmico
+                   </button>
+                 </h2>
+               </div>
+               <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                 <div class="card-body bg-info text-white">
+                   TEXTO DO ACADÊMICO
+                 </div>
+               </div>
+             </div>
+             <div class="card">
+              <div class="card-header" id="headingFour">
+                <h2 class="mb-0">
+                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    FAQ OFICIAL DA UNA
+                  </button>
+                </h2>
+              </div>
+              <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+                <div class="card-body bg-info text-white">
+                  <a class="text-white" href="https://animaeducacao.force.com/atendimentoUNA/s/">Clique aqui</a>
+                </div>
+              </div>
+            </div>
+            </div>
+          </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</nav>
+
+
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Quick Row 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src={% static  "QuickRow/aluno/vendor/jquery/jquery.min.js"%}></script>
+  <script src={% static "QuickRow/aluno/vendor/bootstrap/js/bootstrap.bundle.min.js"%}></script>
+
+  <!-- Plugin JavaScript -->
+  <script src= {% static "QuickRow/aluno/vendor/jquery-easing/jquery.easing.min.js"%}></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src={% static "QuickRow/aluno/js/scrolling-nav.js"%}></script>
+
+</body>
+
+</html>
